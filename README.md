@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🖐️ AirControl
+#  AirControl
 
 ### **Next-Generation Real-Time Touchless Hand Gesture Computer Controller**
 
@@ -15,23 +15,23 @@
 
 </div>
 
-## 🌟 Key Features
+##  Key Features
 
-- 🎯 **Jitter-Free Precision Tracking**: Employs Exponential Moving Average (EMA) smoothing (`alpha=0.25`) combined with a dynamic dead-zone threshold (`4.0px`) to eliminate high-frequency hand tremors.
-- 📐 **Adaptive Active Region Mapping**: Custom active region bounding box mapped seamlessly to your full OS screen resolution, avoiding physical strain at camera edges.
-- 🤏 **Normalized Scale-Invariant Pinch Engine**: Distance ratio between Index tip and Thumb tip relative to hand size (Wrist to Middle MCP), rendering gesture recognition robust to hand depth/distance from camera.
-- 🖱️ **Full Mouse Functionality**:
+-  **Jitter-Free Precision Tracking**: Employs Exponential Moving Average (EMA) smoothing (`alpha=0.25`) combined with a dynamic dead-zone threshold (`4.0px`) to eliminate high-frequency hand tremors.
+-  **Adaptive Active Region Mapping**: Custom active region bounding box mapped seamlessly to your full OS screen resolution, avoiding physical strain at camera edges.
+-  **Normalized Scale-Invariant Pinch Engine**: Distance ratio between Index tip and Thumb tip relative to hand size (Wrist to Middle MCP), rendering gesture recognition robust to hand depth/distance from camera.
+-  **Full Mouse Functionality**:
   - **Cursor Movement**: Smooth continuous tracking of the index fingertip.
   - **Left Click**: Quick pinch & release action.
   - **Drag-and-Drop**: Hold pinch beyond `0.35s` or `25px` movement to engage mouse down; release pinch to drop.
   - **Two-Finger Scroll**: Extended Index & Middle finger posture triggers rate-limited vertical scrolling.
-- ❄️ **Anti-Jump Cursor Freeze**: Automatically anchors cursor position during click evaluation and scrolling to prevent unintentional target drift.
-- 🖥️ **Real-Time Heads-Up Display (HUD)**: Interactive visual feedback with bounding boxes, landmark skeleton overlays, FPS counter, pinch ratio stats, and dynamic action flash indicators.
-- ⚡ **Hot-Swappable Runtime Controls**: Instantly toggle individual controllers (Cursor, Clicks/Drag, Scroll) on the fly using keyboard shortcuts.
+-  **Anti-Jump Cursor Freeze**: Automatically anchors cursor position during click evaluation and scrolling to prevent unintentional target drift.
+-  **Real-Time Heads-Up Display (HUD)**: Interactive visual feedback with bounding boxes, landmark skeleton overlays, FPS counter, pinch ratio stats, and dynamic action flash indicators.
+-  **Hot-Swappable Runtime Controls**: Instantly toggle individual controllers (Cursor, Clicks/Drag, Scroll) on the fly using keyboard shortcuts.
 
 ---
 
-## 🏗️ System Architecture & Workflow
+##  System Architecture & Workflow
 
 AirControl operates via a modular design separating vision processing, spatial coordinate mapping, gesture state transitions, and OS mouse synthetic event dispatching.
 
@@ -57,7 +57,7 @@ flowchart TD
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 AirControl/
@@ -78,7 +78,7 @@ AirControl/
 
 ---
 
-## ⚡ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ AirControl/
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 Run the main application script:
 
@@ -121,7 +121,7 @@ python src/main.py
 
 Position your hand in front of the camera inside the green **ACTIVE REGION** box.
 
-### 🎮 Keyboard Shortcuts
+###  Keyboard Shortcuts
 
 | Key | Action | Description |
 | :---: | :--- | :--- |
@@ -132,7 +132,7 @@ Position your hand in front of the camera inside the green **ACTIVE REGION** box
 
 ---
 
-## 🖐️ Gesture Guide
+##  Gesture Guide
 
 | Gesture | Hand Posture | Action Triggered | Visual Indicator |
 | :--- | :--- | :--- | :--- |
@@ -143,7 +143,7 @@ Position your hand in front of the camera inside the green **ACTIVE REGION** box
 
 ---
 
-## ⚙️ Configuration & Tuning
+##  Configuration & Tuning
 
 You can easily adjust control parameters directly in [`src/main.py`](file:///c:/Users/calpo/OneDrive/Documents/AirControl/src/main.py#L59-L81):
 
@@ -174,7 +174,7 @@ scroll_controller = ScrollController(
 
 ---
 
-## 🛠️ Built With
+##  Built With
 
 - **[Python](https://www.python.org/)**: Core application logic.
 - **[MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide)**: High-performance ML hand landmark detection task bundle.
@@ -184,7 +184,7 @@ scroll_controller = ScrollController(
 
 ---
 
-## 📄 License
+##  License
 
 Distributed under the MIT License. See `LICENSE` for details.
 
